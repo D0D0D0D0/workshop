@@ -1,0 +1,12 @@
+import random
+
+
+sides = input("how many sides does your dice have?: ")
+dice = input("how many dices ya rollin?: ")
+mod = input("any modifiers?: ")
+sides = int(sides)
+dice = int(dice)
+mod = int(mod)
+
+for i in range(dice):
+    print(random.randrange(1, sides) + mod)
